@@ -29,8 +29,9 @@ Para rodar a api pode ser feito de duas maneiras executando via container no doc
  Rodando por container:
 - Gerar imagem da api e iniciar o container
 
-`docker build -t api-favoritos-image -f .\Dockerfile .
-docker run --name api-favoritos --link mysql_container:db -p 5000:5000 -d api-favoritos-image`
+`docker build -t api-favoritos-image -f .\Dockerfile .`
+
+`docker run --name api-favoritos --link mysql_container:db -p 5000:5000 -d api-favoritos-image`
 
 Com o container api-favoritos rodando a api já pode ser acessada em http://localhost:5000/api
 
