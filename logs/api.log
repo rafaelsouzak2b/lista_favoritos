@@ -1,0 +1,31 @@
+1° Criar o venv (python -m venv .venv)
+2° ativar venv (.venv\Scripts\activate.bat)
+3° instalar flask (pip install Flask)
+4° instalar flask-restx (pip install flask-restx)
+
+pip install -r requirements.txt
+
+
+pip install marshmallow
+pip install flask-marshmallow
+pip install Flask-SQLAlchemy
+pip install marshmallow-sqlalchemy
+pip install mysql-connector-python
+pip install mysqlclient
+pip install requests
+pip install PyJWT
+pip install flask_httpauth
+pip install pytest
+
+##'6DX3GMGyOsRO'
+
+
+
+docker run --name my-sql-apagar -p 3306:3306 -p 33060:33060 -e MYSQL_ROOT_HOST="%" -e MYSQL_ROOT_PASSWORD="WgAe12" -d mysql/mysql-server:latest
+docker exec -i my-sql-apagar mysql -uroot -pWgAe12 < script.sql
+
+docker build -t api -f .\Dockerfile .     cria imagem api
+docker run --name api-container --link my-sql-apagar:db -p 5000:5000 -d api     roda o contaniner da api
+
+
+docker exec -i api-container pytest      roda os teste no container
