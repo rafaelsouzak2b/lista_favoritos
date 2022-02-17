@@ -1,0 +1,12 @@
+Flask==2.0.2
+flask-restx==0.5.1
+marshmallow==3.14.1
+flask-marshmallow==0.14.0
+Flask-SQLAlchemy==2.5.1
+marshmallow-sqlalchemy==0.27.0
+mysql-connector-python==8.0.28
+mysqlclient==2.1.0
+requests==2.27.1
+PyJWT==2.3.0
+flask_httpauth==4.5.0
+pytest==7.0.1
