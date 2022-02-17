@@ -9,11 +9,10 @@
 Para execução do projeto será necessário a instalação do [Docker Desktop](https://www.docker.com/get-started).
 
 Para iniciar o projeto basta clonar o projeto do GitHub num diretório de sua preferência:
-  
-
- `cd "diretorio de sua preferencia"`
  
  `git clone https://github.com/rafaelsouzak2b/lista_favoritos.git`
+ 
+ `cd lista_favoritos`
 
   ## Inicialização
 
