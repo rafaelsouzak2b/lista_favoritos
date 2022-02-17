@@ -20,7 +20,7 @@ Após o Docker Desktop instalado e o projeto clonado, será necessário criar a 
 
 `docker run --name mysql_container -p 3306:3306 -p 33060:33060 -e MYSQL_ROOT_HOST="%" -e MYSQL_ROOT_PASSWORD="WgAe12" -d mysql/mysql-server:latest`
 
-Criar banco de dados no banco mysql do container rafael-mysql
+Criar banco de dados no banco mysql do container mysql_container
 
 `docker exec -i mysql_container mysql -uroot -pWgAe12 < script.sql`
 
